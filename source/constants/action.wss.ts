@@ -1,0 +1,15 @@
+/* eslint-disable prettier/prettier */
+export enum actions {
+    NEWUSER = "NEWUSER",
+    ANSWER = "ANSWER",
+    REJECT = "REJECT",
+    ACCEPT = "ACCEPT",
+    JOINROOM = "JOINROOM",
+    CALLROOM = "CALLROOM",
+    LEAVEROOM = "LEAVEROOM",
+    lEFTCALLROOM = "lEFTCALLROOM",
+    ENDCALLROOM = "ENDCALLROOM",
+    JOINROOMCALLREQUEST = "JOINROOMCALLREQUEST",
+    ONCONNECT = "connection",
+    NEWUSERCREATED = "NEWUSERCREATED"
+}
