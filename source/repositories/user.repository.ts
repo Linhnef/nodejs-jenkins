@@ -47,3 +47,7 @@ export const getUser = async (email: string): Promise<User | null> => {
     if (!user) return null;
     return user;
 };
+
+export const initial = async () => {
+    return 'Server working !'
+};

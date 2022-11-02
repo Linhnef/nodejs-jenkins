@@ -52,13 +52,5 @@ const peerServer = ExpressPeerServer(httpServer, {
 app.use("/peerjs", peerServer);
 app.use(router);
 createPeerServerListeners(peerServer);
-createConnection(databaseConfig)
-    .then((_connection) => {
-        console.log('Success connect to db');
-    })
-    .catch((err) => {
-        console.log('Unable to connect to db', err);
-        process.exit(1);
-    });
 
 
