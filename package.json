@@ -7,7 +7,8 @@
     "build": "rm -rf build/ && prettier --write source/ && tsc",
     "start": "nodemon source/server.ts",
     "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "serve" : "pm2 start build/server.js"
   },
   "dependencies": {
     "@types/cors": "^2.8.12",
